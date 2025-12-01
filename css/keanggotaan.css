@@ -7,67 +7,159 @@
   --warna-teks: #1e293b;
 }
 
-body {
-  background-color: var(--warna-latar);
-  font-family: 'Inter', sans-serif;
-  color: var(--warna-teks);
-  padding-top: 80px;
-  /* Fix navbar overlay */
-}
-
-/* NAVBAR */
-
-
-/* CARD (STATISTIK) */
-.stat-card {
-  background: white;
-  padding: 1.8rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+/* ===== Membership Section ===== */
+.membership-section {
+  font-family: 'Poppins', sans-serif;
   text-align: center;
+  color: #2c3e50;
+  padding-bottom: 50px;
 }
 
-.stat-card i {
-  font-size: 2rem;
-  color: var(--warna-utama);
+/* Header */
+.membership-header {
+  padding: 60px 20px 30px;
+  margin-top: 50px;
 }
 
-.stat-angka {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 10px;
+.membership-header h1 {
+  font-size: 42px;
+  color: #2c5f4c;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
 }
 
-/* TABEL */
-.table-header {
-  background: linear-gradient(90deg, #115e59, #0f524d);
-  color: white;
+.membership-header h1::after {
+  content: "";
+  width: 120px;
+  height: 4px;
+  background: #f5e85b;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
 }
 
-.badge-aktif {
-  background-color: #d1fae5;
-  color: #065f46;
-  font-size: 0.75rem;
+.membership-header p {
+  font-size: 16px;
 }
 
-.badge-alumni {
-  background-color: #e5e7eb;
-  color: #374151;
-  font-size: 0.75rem;
+/* Banner Section */
+.member-banner {
+  background-image: url('../assets/Background.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+  margin: 0 auto 50px;
+  width: 100%;
 }
 
-/* SECTION BOX */
-.section-box {
-  background: white;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+.banner-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
 
-.qr-box {
-  background: linear-gradient(#f1fdf7, #e3f5ed);
-  padding: 2rem;
-  border-radius: 15px;
+.banner-overlay h2 {
+  font-size: 32px;
+  font-weight: 600;
 }
 
-/* FOOTER */
+.banner-overlay p {
+  font-size: 16px;
+  max-width: 600px;
+}
+
+.join-btn {
+  padding: 10px 28px;
+  margin-top: 15px;
+  background: #f8f8f8;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #000000;
+  text-decoration: none;
+}
+
+.join-btn:hover {
+  background: #ddd;
+}
+
+/* Register Box */
+.register-box {
+  width: 60%;
+  margin: 0 auto;
+  background: #f4f8f7;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.icon-top {
+  font-size: 30px;
+}
+
+.register-content h3 {
+  color: #2c5f4c;
+}
+
+.qr-box img {
+  width: 260px;
+  margin: 20px 0;
+}
+
+.info-list {
+  text-align: left;
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.info-list li {
+  margin: 5px 0;
+  color: #2D5F4D;
+}
+
+/* Syarat Box */
+.syarat-box {
+  margin: 30px auto;
+  width: 50%;
+  text-align: left;
+  background: #f4f8f7;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.syarat-box h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2D5F4D;
+}
+
+.syarat-box ul {
+  padding-left: 18px;
+}
+
+.syarat-box li {
+  margin: 4px 0;
+  color: #2D5F4D;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+
+  .register-box,
+  .syarat-box {
+    width: 85%;
+  }
+}

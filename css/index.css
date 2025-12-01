@@ -84,3 +84,119 @@ body {
   /* Darker text for readability */
   font-weight: 500;
 }
+
+/* Organizational Structure Card - Old Style */
+.org-card {
+  background-color: #aebdb6;
+  /* Sage green from image */
+  color: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.org-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: white;
+  /* Placeholder background if transparent */
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
+
+.org-card h5 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.org-card p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  font-weight: 500;
+  color: #4a5a54;
+  /* Darker text for position as seen in image (greyish) */
+}
+
+/* Override p color for org card specifically if needed, 
+   but the image shows position text is dark grey/greenish, 
+   while name is white. Wait, looking closely at image 1:
+   Name: White
+   Position: Dark Grey/Green
+*/
+.org-card h5 {
+  color: white;
+}
+
+.org-card p {
+  color: #5f716b;
+  /* Dark greyish green */
+  font-weight: bold;
+}
+
+/* SOP Section */
+.sop-section {
+  background-color: #4d8b7a;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.sop-header {
+  margin-bottom: 40px;
+}
+
+.sop-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #f5e85b;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
+.sop-card {
+  background-color: #7fb5a6;
+  padding: 30px;
+  border-radius: 20px;
+  height: 100%;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sop-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sop-card li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.sop-card li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+}

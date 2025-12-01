@@ -1,0 +1,73 @@
+/* WARNA UTAMA */
+:root {
+  --warna-utama: #115e59;
+  /* Hijau Tua (Samakan dengan index.css) */
+  --warna-latar: #ecfdf5;
+  /* Hijau Muda */
+  --warna-teks: #1e293b;
+}
+
+body {
+  background-color: var(--warna-latar);
+  font-family: 'Inter', sans-serif;
+  color: var(--warna-teks);
+  padding-top: 80px;
+  /* Fix navbar overlay */
+}
+
+/* NAVBAR */
+
+
+/* CARD (STATISTIK) */
+.stat-card {
+  background: white;
+  padding: 1.8rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.stat-card i {
+  font-size: 2rem;
+  color: var(--warna-utama);
+}
+
+.stat-angka {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* TABEL */
+.table-header {
+  background: linear-gradient(90deg, #115e59, #0f524d);
+  color: white;
+}
+
+.badge-aktif {
+  background-color: #d1fae5;
+  color: #065f46;
+  font-size: 0.75rem;
+}
+
+.badge-alumni {
+  background-color: #e5e7eb;
+  color: #374151;
+  font-size: 0.75rem;
+}
+
+/* SECTION BOX */
+.section-box {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.qr-box {
+  background: linear-gradient(#f1fdf7, #e3f5ed);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+/* FOOTER */

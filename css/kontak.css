@@ -1,0 +1,35 @@
+/* Warna Dasar */
+:root {
+  --warna-utama: #115e59;
+  /* Hijau Tua */
+  --warna-latar: #ecfdf5;
+  /* Hijau Muda */
+  --warna-teks: #1e293b;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--warna-latar);
+  color: var(--warna-teks);
+  padding-top: 80px;
+  /* Fix navbar overlay */
+}
+
+/* Navbar */
+
+
+/* Content Specific */
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-box {
+  background: var(--warna-utama);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  height: 100%;
+}

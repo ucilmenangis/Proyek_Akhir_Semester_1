@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Warna Dasar */
+        :root {
+            --warna-utama: #115e59;
+            /* Hijau Tua */
+            --warna-latar: #ecfdf5;
+            /* Hijau Muda */
+            --warna-teks: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--warna-latar);
+            color: var(--warna-teks);
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--warna-utama);
+        }
+
+        .logo-navbar {
+            width: 60px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #a7f3d0 !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1533240332313-0db49b459ad6?q=80&w=2574&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        /* Tombol */
+        .btn-hijau {
+            background-color: white;
+            color: var(--warna-utama);
+            border-radius: 50px;
+            padding: 10px 25px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn-hijau:hover {
+            background-color: #d1fae5;
+            color: var(--warna-utama);
+        }
+
+        /* Kartu */
+        .kartu {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            border-top: 4px solid var(--warna-utama);
+        }
+
+        .layanan-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f8f9fa;
+            margin-top: 70px
+        }
+
+        .judul-layanan {
+            font-size: 60px;
+            font-weight: bold;
+            color: #2f5b40;
+            margin-bottom: 10px;
+        }
+
+        .subjudul-layanan {
+            font-size: 25px;
+            color: #2f5b40;
+            margin-bottom: 40px;
+        }
+
+        .layanan-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .layanan-card {
+            background-color: #369773;
+            width: 330px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .judul-kategori {
+            background-color: #3c6b55;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .layanan-img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .deskripsi-title {
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+
+        .deskripsi-text {
+            font-size: 14px;
+            color: #f5f5f5;
+            text-align: justify;
+            margin: 0 0 10px 0;
+        }
+
+        .qr-img {
+            width: 120px;
+            align-self: center;
+            margin: 10px 0;
+        }
+
+        .btn-layanan {
+            display: inline-block;
+            background-color: white;
+            color: #255d43;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-top: auto;
+            align-self: center;
+        }
+
+        .btn-layanan:hover {
+            background-color: #e8f3ed;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d5a4c;
+            /* Sesuai gambar */
+            color: white;
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        .logo-footer {
+            width: 35px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .footer-link {
+            color: #d1d5db;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            color: white;
+            margin-right: 15px;
+        }
+
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            height: 150px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="index.html">
+                <img src="assets/himapala_logo.webp" alt="Logo" width="40" height="40"
+                    class="d-inline-block align-text-top me-2 rounded-circle">
+                HIMAPALA BERKISAR
+            </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prestasi.html">Prestasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="keanggotaan.html">Keanggotaan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Menu Layanan-->
+    <section class="layanan-section">
+        <h1 class="judul-layanan">Layanan</h1>
+        <p class="subjudul-layanan">
+            Kami menawarkan beberapa layanan menarik bagi masyarakat dan personil
+        </p>
+
+        <div class="layanan-container">
+
+            <!-- Kartu 1 -->
+            <div class="layanan-card">
+                <div class="card-body">
+                    <h3 class="judul-kategori">Bantuan Masyarakat</h3>
+                    <img src="assets/Bantuan Masyarakat.jpeg" alt="Bantuan Masyarakat" class="layanan-img">
+
+                    <p class="deskripsi-title">DESKRIPSI :</p>
+                    <p class="deskripsi-text">
+                        Bantuan berupa tenaga, barang, dan jasa yang diberikan kepada individu, kelompok, dan komunitas
+                        yang membutuhkan. Fokus utamanya untuk meningkatkan kesejahteraan, melindungi masyarakat dari
+                        risiko, serta membantu mengatasi kesulitan dan kerawanan lainnya.
+                    </p>
+
+                    <img src="assets/QR Masyarakat.jpeg" alt="QR Bantuan Masyarakat" class="qr-img">
+                </div>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfq8mjZKj5rJeyn-uk6wconSfIQttBGTQfHL-JIR1l1S_GdTA/viewform?usp=header"
+                    class="btn-layanan">Klik Disini</a>
+            </div>
+            <!-- Kartu 2 -->
+            <div class="layanan-card">
+                <div class="card-body">
+                    <h3 class="judul-kategori">Bantuan Personil</h3>
+                    <img src="assets/Bantuan Personil.jpeg" alt="Bantuan Personil" class="layanan-img">
+
+                    <p class="deskripsi-title">DESKRIPSI :</p>
+                    <p class="deskripsi-text">
+                        Bantuan yang mencakup anggota atau personil HIMAPALA untuk membantu operasi SAR, evakuasi, dan
+                        kegiatan lapangan. Fokus utamanya berupa penyelamatan, observasi, dan pendampingan dalam situasi
+                        berbahaya, terutama di medan alam.
+                    </p>
+
+                    <img src="assets/QR Personil.jpeg" alt="QR Bantuan Personil" class="qr-img">
+                </div>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7os1YrQLT8pMukaDgFqCqRaxsgShPg6iNpY0HUr51FPHFZA/viewform?usp=header"
+                    class="btn-layanan">Klik Disini</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <!-- Kolom 1: Info -->
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/himapala_logo.webp " alt="Logo" width="40" height="40"
+                            class="d-inline-block align-text-top rounded-circle">
+                        <h5 class="fw-bold mb-0">UKM HIMAPALA</h5>
+                    </div>
+                    <p class="small text-white-50 mb-4">
+                        Menjelajahi keajaiban alam bersama sejak 1985. Bergabunglah dengan kami dalam petualangan yang
+                        menantang semangat.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.instagram.com/himapalabekisar?igsh=MXRndXN5d3luOW9yZQ=="
+                            class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@himapalabekisar?_t=ZS-90EBjgH6e8O&_r=1" class="social-icon"><i
+                                class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Kolom 2: Tautan -->
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Tautan Cepat</h6>
+                    <a href="index.html" class="footer-link">Beranda</a>
+                    <a href="layanan.html" class="footer-link">Layanan</a>
+                    <a href="galeri.html" class="footer-link">Galeri</a>
+                    <a href="keanggotaan.html" class="footer-link">Keanggotaan</a>
+                    <a href="kontak.html" class="footer-link">Kontak</a>
+                </div>
+
+                <!-- Kolom 3: Hubungi Kami -->
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Hubungi Kami</h6>
+                    <div class="d-flex gap-2 mb-3 text-white-50 small">
+                        <i class="bi bi-envelope"></i>
+                        <span>himapalabekisar05@gmail.com</span>
+                    </div>
+                    <div class="d-flex gap-2 mb-3 text-white-50 small">
+                        <i class="bi bi-telephone"></i>
+                        <span>+62 851-9815-2591</span>
+                    </div>
+                    <div class="d-flex gap-2 mb-3 text-white-50 small">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>Alamat Kampus Politeknik Negeri Jember<br>Jl. Mastrip PO BOX 164<br>Jember 68121, Jawa
+                            Timur</span>
+                    </div>
+                </div>
+
+                <!-- Kolom 4: Peta -->
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Temukan Kami</h6>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.424083329246!2d113.72058767510795!3d-8.15947739187127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b617d8f623%3A0xf6c4437632474338!2sPoliteknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary">
+
+            <div class="text-center small text-white-50">
+                <p class="mb-0">&copy; 2025 UKM HIMAPALA. Hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

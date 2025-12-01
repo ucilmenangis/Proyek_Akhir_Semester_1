@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - HIMAPALA BERKISAR</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Warna Dasar */
+        :root {
+            --warna-utama: #115e59;
+            /* Hijau Tua */
+            --warna-latar: #ecfdf5;
+            /* Hijau Muda */
+            --warna-teks: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--warna-latar);
+            color: var(--warna-teks);
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--warna-utama);
+        }
+
+        .navbar-brand {
+            color: white !important;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #a7f3d0 !important;
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1) !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1533240332313-0db49b459ad6?q=80&w=2574&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        /* Tombol */
+        .btn-hijau {
+            background-color: white;
+            color: var(--warna-utama);
+            border-radius: 50px;
+            padding: 10px 25px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn-hijau:hover {
+            background-color: #d1fae5;
+            color: var(--warna-utama);
+        }
+
+        /* Kartu */
+        .kartu {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            border-top: 4px solid var(--warna-utama);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #115e59;
+            /* Sesuai gambar */
+            color: white;
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        .footer-link {
+            color: #d1d5db;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            color: white;
+            margin-right: 15px;
+        }
+
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            height: 150px;
+            background-color: #eee;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #e9f0e9;
+            padding-top: 90px;
+        }
+
+        .contact-card {
+            background: #e7e6e7;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .icon-box {
+            background: #2f6547;
+            padding: 12px;
+            border-radius: 8px;
+            color: white;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+        }
+
+        h2,
+        h4 {
+            color: #2f6547;
+        }
+
+        /* --- FOOTER STYLE --- */
+        footer {
+            background-color: #2d5a4c;
+            color: white;
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-link {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+
+        .footer-link:hover {
+            color: #d4c865;
+        }
+
+        .social-icon {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: #d4c865;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 130px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="index.html">
+                <img src="assets/himapala_logo.webp" alt="Logo" width="40" height="40"
+                    class="d-inline-block align-text-top me-2 rounded-circle">
+                HIMAPALA BERKISAR
+            </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prestasi.html">Prestasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="keanggotaan.html">Keanggotaan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- KONTEN HALAMAN -->
+    <div class="container mt-5 mb-5">
+
+        <h2 class="text-center mb-5">Hubungi Kami</h2>
+
+        <div class="row g-4">
+
+            <!-- Kontak -->
+            <div class="col-md-6">
+                <h4>Informasi Kontak</h4>
+
+                <div class="contact-card mb-3">
+                    <div class="icon-box">📧</div>
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:himalapalabekisar05@gmail.com">himalapalabekisar05@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-card mb-3">
+                    <div class="icon-box">📞</div>
+                    <div>
+                        <strong>Telephone / WhatsApp</strong><br>
+                        <a href="https://wa.me/6285198152591" target="_blank">+62 851-9815-2591</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Sosial -->
+            <div class="col-md-6">
+                <h4>Media Sosial</h4>
+
+                <div class="contact-card mb-3">
+                    <div class="icon-box">📷</div>
+                    <div>
+                        <strong>Instagram</strong><br>
+                        <a href="https://instagram.com/himapalabekisar" target="_blank">@himapalabekisar</a>
+                    </div>
+                </div>
+
+                <div class="contact-card mb-3">
+                    <div class="icon-box">🎵</div>
+                    <div>
+                        <strong>Tiktok</strong><br>
+                        <a href="https://tiktok.com/@himapalabekasir" target="_blank">@himapalabekasir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-4 g-4">
+            <div class="col-md-6">
+                <div class="contact-card">
+                    <div class="icon-box">💬</div>
+                    <div>
+                        <strong>Sekretariat</strong><br>
+                        Gedung Kemahasiswaan Polije<br>
+                        Lantai 2, Ruang UKM<br>
+                        Buka saat jam kuliah
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="contact-card">
+                    <div class="icon-box">📘</div>
+                    <div>
+                        <strong>Facebook</strong><br>
+                        Himapala Bekisar
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="contact-card">
+                    <div class="icon-box">📍</div>
+                    <div>
+                        <strong>Alamat Kampus</strong><br>
+                        Politeknik Negeri Jember<br>
+                        Jl. Mastrip PO BOX 164<br>
+                        Jember 68121, Jawa Timur
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Baru -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <!-- Kolom 1: Info -->
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/himapala_logo.webp " alt="Logo" width="40" height="40"
+                            class="d-inline-block align-text-top rounded-circle">
+                        <h5 class="fw-bold mb-0">UKM HIMAPALA</h5>
+                    </div>
+                    <p class="small text-white-50 mb-4">
+                        Menjelajahi keajaiban alam bersama sejak 1985. Bergabunglah dengan kami dalam petualangan yang
+                        menantang semangat.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.instagram.com/himapalabekisar?igsh=MXRndXN5d3luOW9yZQ=="
+                            class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@himapalabekisar?_t=ZS-90EBjgH6e8O&_r=1" class="social-icon"><i
+                                class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Kolom 2: Tautan -->
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Tautan Cepat</h6>
+                    <a href="index.html" class="footer-link">Beranda</a>
+                    <a href="layanan.html" class="footer-link">Layanan</a>
+                    <a href="galeri.html" class="footer-link">Galeri</a>
+                    <a href="keanggotaan.html" class="footer-link">Keanggotaan</a>
+                    <a href="kontak.html" class="footer-link">Kontak</a>
+                </div>
+
+                <!-- Kolom 3: Hubungi Kami -->
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Hubungi Kami</h6>
+                    <div class="d-flex gap-2 mb-3 text-white-50 small">
+                        <i class="bi bi-envelope"></i>
+                        <span>himapalabekisar05@gmail.com</span>
+                    </div>
+                    <div class="d-flex gap-2 mb-3 text-white-50 small">
+                        <i class="bi bi-telephone"></i>
+                        <span>+62 851-9815-2591</span>
+                    </div>
+                    <div class="d-flex gap-2 mb-3 text-white-50 small">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>Alamat Kampus Politeknik Negeri Jember<br>Jl. Mastrip PO BOX 164<br>Jember 68121, Jawa
+                            Timur</span>
+                    </div>
+                </div>
+
+                <!-- Kolom 4: Peta -->
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Temukan Kami</h6>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.424083329246!2d113.72058767510795!3d-8.15947739187127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b617d8f623%3A0xf6c4437632474338!2sPoliteknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary">
+
+            <div class="text-center small text-white-50">
+                <p class="mb-0">&copy; 2025 UKM HIMAPALA. Hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

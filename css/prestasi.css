@@ -1,0 +1,175 @@
+/* =========================================================
+   RESET & DASAR
+========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --warna-utama: #115e59;
+  /* Hijau Tua */
+  --warna-latar: #ecfdf5;
+  /* Hijau Muda */
+  --warna-teks: #1e293b;
+}
+
+body {
+  background-color: var(--warna-latar);
+  color: var(--warna-teks);
+  padding-top: 60px;
+}
+
+/* =========================================================
+   JUDUL HALAMAN
+========================================================= */
+.judul {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.judul h2 {
+  color: #193e1f;
+  /* Dark Green matching Galeri */
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+/* Garis kuning */
+.judul h2::after {
+  content: "";
+  width: 120px;
+  height: 4px;
+  background: #f5e85b;
+  /* Yellow underline */
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+.judul p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* =========================================================
+   GRID PRESTASI
+========================================================= */
+.galeri {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+}
+
+/* =========================================================
+   KARTU ITEM
+========================================================= */
+.item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  aspect-ratio: 16 / 9;
+  background-color: #ddd;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.item:hover img {
+  transform: scale(1.06);
+}
+
+/* =========================================================
+   TEKS OVERLAY
+========================================================= */
+.overlay .teks,
+.grid .item .teks {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   MODAL PREVIEW
+========================================================= */
+#previewModal .modal-dialog {
+  max-width: 650px !important;
+  margin: 40px auto;
+}
+
+#previewModal .modal-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#previewModal .modal-body {
+  padding: 0 !important;
+}
+
+#previewModal img.modal-img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+
+#previewModal .info-box {
+  background-color: #557c66;
+  padding: 25px 30px;
+  border-radius: 0 0 20px 20px;
+  color: white;
+}
+
+#previewModal .info-box h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#previewModal .info-box p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 650px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .judul h2 {
+    font-size: 32px;
+  }
+
+  #previewModal .modal-dialog {
+    max-width: 90% !important;
+  }
+}

@@ -1,0 +1,86 @@
+/* Warna Dasar */
+:root {
+  --warna-utama: #115e59;
+  /* Hijau Tua */
+  --warna-latar: #ecfdf5;
+  /* Hijau Muda */
+  --warna-teks: #1e293b;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--warna-latar);
+  color: var(--warna-teks);
+  padding-top: 80px;
+  /* Fix navbar overlay */
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/hero_image.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: -80px;
+  /* Counteract body padding for full screen hero */
+  padding-top: 80px;
+}
+
+/* Tombol */
+.btn-hijau {
+  background-color: white;
+  color: var(--warna-utama);
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-hijau:hover {
+  background-color: #d1fae5;
+  color: var(--warna-utama);
+}
+
+/* Kartu */
+.kartu {
+  background: #c6e6ce;
+  /* Light green background matching the image */
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  border: 1px solid #a3d9b1;
+  /* Subtle border */
+}
+
+.visi-misi-section {
+  background-color: #d1fae5;
+  /* Overall section background */
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: var(--warna-utama);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 4px;
+}
+
+.kartu h4 {
+  color: var(--warna-utama);
+}
+
+.kartu p {
+  color: #334155;
+  /* Darker text for readability */
+  font-weight: 500;
+}

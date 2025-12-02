@@ -13,9 +13,9 @@ body {
 .judul h2 {
   color: #115e59;
   /* Dark Green matching Galeri */
-  font-size: 40px;
+  font-size: 42px;
   margin-bottom: 15px;
-  font-weight: 700;
+  font-weight: bold;
   position: relative;
   display: inline-block;
 }
